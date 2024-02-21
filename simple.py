@@ -18,9 +18,9 @@ def score_dataset(
         **(evaluate_args if evaluate_args else {}),
     )
 
-    print(
-        f"Mean f1: {mean(results.f1)}. over {len(df)} observations",
-    )
+    print(results.keys())
+
+    print(f"Mean f1: {mean(results['f1'])}. over {len(df)} observations")
 
 
 if __name__ == "__main__":
